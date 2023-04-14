@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Manelik Gutierrez</title>
+    <title>HCI Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Default.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="CSS/Contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent Pro">
 
-
-    </style>
 </head>
-<body>
-<header>
-    <h1>Manelik Gutierrez</h1>
-</header>
-
-<!list of links to the different parts of my website.>
+<style>
+    body{
+        font-family: 'Advent Pro';
+        background-image: url("Assets/Background.jpg");
+        background-size: cover;
+    }
+</style>
 
 <nav>
+
+
     <ul>
-        <li><a href="About%20Page.htmlml">About</a></li>
-        <li><a href="Education.html">Education</a></li>
+        <li><a href="index.html"> Home Page</a></li>
+        <li><a href="About%20Page.html">About</a></li>
         <li><a href="Experience.html">Experience</a></li>
         <li><a href="Projects.html">Projects</a></li>
         <li><a href="Skills.html">Skills</a></li>
         <li><a href="Contact.html">Contact</a></li>
     </ul>
+
+
 </nav>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email</p>
+<header>
 
-</section>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form method="post" action="submit-form.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</header>
+
+
+
+

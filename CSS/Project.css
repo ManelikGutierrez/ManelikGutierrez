@@ -1,0 +1,92 @@
+body {
+
+    font-family: Arial, sans-serif;
+    font-family: Papyrus;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    font-size: large;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+}
+
+
+nav li a {
+    color: #333;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1){
+
+}
+section:nth-child(2){
+    color: #42455a;
+//
+}
+section:nth-child(3){
+
+}
+section:nth-child(4){
+    color: #42455a;
+    //
+}
+section .container{
+    margin: 100px;
+}
+section h1{
+    font-size: 3rem;
+    margin: 20px;
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .text-container{
+    display: flex;
+}
+section .text-container .text-box{
+    margin: 20px;
+    padding: 20px;
+    background: #00c2cb;
+}
+section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    section h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    section .text-container{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
