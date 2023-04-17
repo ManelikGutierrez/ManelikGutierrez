@@ -5,21 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65fefaca-7ddc-4d53-be0a-dd9b32ff1c12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/Contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/Index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/Project.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/Animations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/Projects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/ScrowDown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/About Me.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/About.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/Experience.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/Skills.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/About Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/About Page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/Default.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TrollFace1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/Index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/Project.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Project.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Education.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/Experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/Projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/Skills.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Experience.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/Projects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Skills.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -183,7 +185,9 @@
       <workItem from="1681348597872" duration="3471000" />
       <workItem from="1681356967047" duration="8828000" />
       <workItem from="1681402627978" duration="5152000" />
-      <workItem from="1681428916921" duration="8294000" />
+      <workItem from="1681428916921" duration="14037000" />
+      <workItem from="1681484754711" duration="3701000" />
+      <workItem from="1681540935100" duration="19265000" />
     </task>
     <servers />
   </component>

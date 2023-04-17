@@ -16,14 +16,14 @@ nav ul {
 
 
 nav li a {
-    color: #333;
+    color: wheat;
     float: left;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 section{
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
