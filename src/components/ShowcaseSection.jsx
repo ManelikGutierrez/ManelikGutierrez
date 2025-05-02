@@ -53,7 +53,7 @@ const AppShowcase = () => {
           <div ref={rydeRef} className="Black-Hole-project-wrapper">
           <a href="https://github.com/BobaTino/RayTrace_BlackHole/tree/baseCode" >
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Black Hole RayTracer" />
+              <img src="./images/project1.png" alt="Black Hole RayTracer" />
             </div>
             <div className="text-content">
               
@@ -75,7 +75,7 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/project3.png"
+                  src="./images/project3.png"
                   alt="Library Management Platform"
                 />
               </div>
@@ -94,7 +94,7 @@ const AppShowcase = () => {
             <div className="project" ref={ycDirectoryRef}>
               
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project2.png" alt="UTalk" />
+                <img src="./images/project2.png" alt="UTalk" />
               </div>
               <h2>UTalk</h2>
             </div>
