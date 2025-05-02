@@ -11,10 +11,6 @@ const navLinks = [
       name: "Skills",
       link: "#skills",
     },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
   ];
   
   const words = [
@@ -112,6 +108,23 @@ const navLinks = [
     },
   ];
   
+  const socialIcons = [
+    {
+      name: "Linkedin",
+      modelPath: "./models/linkedin.glb",
+      scale:15,
+      rotation: [89.6, 0, 0],
+      url: "https://www.linkedin.com/in/manelik-gutierrez/"
+    },
+    {
+      name: "Github",
+      modelPath: "./models/Github.glb",
+      scale:35,
+      rotation: [180.7, 28.3 , 0],
+      url: "https://github.com/ManelikGutierrez",
+    }
+  ];
+
   const techStackIcons = [
     {
       name: "React Developer",
@@ -248,6 +261,7 @@ const navLinks = [
     expLogos,
     testimonials,
     socialImgs,
+    socialIcons,
     techStackIcons,
     techStackImgs,
     navLinks,
