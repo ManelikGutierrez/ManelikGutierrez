@@ -4,10 +4,14 @@ Command: npx gltfjsx@6.5.3 .\optimized-room.glb
 */
 
 import React from 'react'
+import { useGraph } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
+import { SkeletonUtils } from 'three-stdlib'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/optimized-room.glb')
+  const { scene } = useGLTF('/optimized-room.glb')
+  const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
+  const { nodes, materials } = useGraph(clone)
   return (
     <group {...props} dispose={null}>
       <group position={[0, 3.063, 0]} scale={0.779}>
@@ -80,7 +84,7 @@ export function Model(props) {
       <group position={[0.482, 1.925, -2.255]} scale={1.762}>
         <mesh geometry={nodes.Vert001.geometry} material={materials['IMac-Body']} rotation={[Math.PI, 0, Math.PI]} />
       </group>
-      <group position={[0, 0.257, -1.419]} rotation={[Math.PI, -0.065, Math.PI]} scale={1.865}>
+      <group position={[0, 0.257, -1.517]} rotation={[Math.PI, -0.065, Math.PI]} scale={1.988}>
         <mesh geometry={nodes.NurbsPath.geometry} material={materials.fabric} position={[0, 0.457, -0.286]} scale={[0.138, 0.156, 0.156]} />
         <mesh geometry={nodes.NurbsPath001.geometry} material={materials['chrome metal']} position={[0, 0.457, -0.295]} scale={[0.138, 0.156, 0.156]} />
         <mesh geometry={nodes.NurbsPath004.geometry} material={materials['plastic smooth']} position={[0, 0.457, -0.384]} scale={[0.138, 0.156, 0.156]} />
@@ -116,6 +120,31 @@ export function Model(props) {
         <group position={[-0.006, 0.136, 0.004]} rotation={[0.025, -0.953, 0.021]} scale={[0.008, 0.006, 0.008]}>
           <mesh geometry={nodes.Plane022.geometry} material={materials['silver 1.001']} />
           <mesh geometry={nodes.Plane022_1.geometry} material={materials['silver 2']} />
+        </group>
+      </group>
+      <group position={[0, 0.244, -0.965]} rotation={[-Math.PI, 0.013, -Math.PI]}>
+        <primitive object={nodes.spine} />
+      </group>
+      <group position={[-0.018, 0.004, -1.017]} rotation={[-Math.PI, 0.04, -Math.PI]}>
+        <primitive object={nodes.root} />
+        <primitive object={nodes['MCH-torsoparent']} />
+        <primitive object={nodes['MCH-hand_ikparentL']} />
+        <primitive object={nodes['MCH-upper_arm_ik_targetparentL']} />
+        <primitive object={nodes['MCH-hand_ikparentR']} />
+        <primitive object={nodes['MCH-upper_arm_ik_targetparentR']} />
+        <primitive object={nodes['MCH-foot_ikparentL']} />
+        <primitive object={nodes['MCH-thigh_ik_targetparentL']} />
+        <primitive object={nodes['MCH-foot_ikparentR']} />
+        <primitive object={nodes['MCH-thigh_ik_targetparentR']} />
+        <primitive object={nodes.neutral_bone} />
+        <skinnedMesh geometry={nodes.model.geometry} material={materials.CustomMaterial} skeleton={nodes.model.skeleton} />
+      </group>
+      <group position={[0, 0, 2.179]}>
+        <group position={[-3.29, 1.615, -2.307]} rotation={[Math.PI / 2, 0, -1.577]} scale={1.195}>
+          <mesh geometry={nodes.Cylinder002.geometry} material={materials['NA Aluminium.002']} />
+          <mesh geometry={nodes.Cylinder002_1.geometry} material={materials['NA Aluminium.002']} />
+          <mesh geometry={nodes.Cylinder002_2.geometry} material={materials['Gasket.002']} />
+          <mesh geometry={nodes.Cylinder002_3.geometry} material={materials['Window Glass.002']} />
         </group>
       </group>
       <group position={[-0.173, 1.904, -2.45]} scale={1.338}>
@@ -176,10 +205,8 @@ export function Model(props) {
           <mesh geometry={nodes.Cylinder005_1.geometry} material={materials['Metal Chrome']} />
         </group>
       </group>
-      <mesh geometry={nodes.Patch_Black_Carpet.geometry} material={materials['Carpet006.040']} position={[1.093, 0.291, 0]} scale={2.08} />
+      <mesh geometry={nodes.Patch_Black_Carpet.geometry} material={materials['Carpet006.040']} position={[0.076, 0.291, 0]} scale={[3.104, 1.929, 2.134]} />
       <mesh geometry={nodes.Patch_Black_Carpet002.geometry} material={materials['Carpet006.040']} scale={2.08} />
-      <mesh geometry={nodes.Patch_Black_Carpet001.geometry} material={materials['Carpet006.001']} position={[-0.88, 0.291, 0]} scale={2.08} />
-      <mesh geometry={nodes.Sitting_Boy_with_Black_Sweater_and_Hat.geometry} material={materials['Sitting Boy with Black Sweater and Hat']} position={[-0.027, 0.006, -1.499]} rotation={[-Math.PI, 0.108, -Math.PI]} scale={1.917} />
       <mesh geometry={nodes.body1_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.radiator_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.radiator_blinn1_0001.geometry} material={materials.blinn1} />
@@ -187,12 +214,6 @@ export function Model(props) {
       <mesh geometry={nodes.red_vac_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.vacuum1_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.vacuumgrey_blinn1_0.geometry} material={materials.blinn1} />
-      <group position={[-3.144, 1.615, -0.284]} rotation={[Math.PI / 2, 0, -1.577]} scale={1.195}>
-        <mesh geometry={nodes.Cylinder001.geometry} material={materials['NA Aluminium.001']} />
-        <mesh geometry={nodes.Cylinder001_1.geometry} material={materials['NA Aluminium.001']} />
-        <mesh geometry={nodes.Cylinder001_2.geometry} material={materials['Gasket.001']} />
-        <mesh geometry={nodes.Cylinder001_3.geometry} material={materials['Window Glass.001']} />
-      </group>
       <group position={[-3.29, 1.615, -2.307]} rotation={[Math.PI / 2, 0, -1.577]} scale={1.195}>
         <mesh geometry={nodes.Cylinder042.geometry} material={materials['NA Aluminium']} />
         <mesh geometry={nodes.Cylinder042_1.geometry} material={materials['NA Aluminium']} />
