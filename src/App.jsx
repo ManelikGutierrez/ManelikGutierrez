@@ -14,7 +14,7 @@ const App = () => {
       <Hero/>
       <ShowcaseSection/>
       <NavBar/>
-      <Experience/>
+      {/* <Experience/> Will add once I get experience*/} 
       <TechStack/>
       <Contact/>
     </>
